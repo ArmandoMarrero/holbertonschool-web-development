@@ -4,64 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .item {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+        }
+        .footer-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .footer-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .footer-images img {
+            width: 50px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <!-- Link element with an image inside -->
-        <a href="https://www.example.com">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-        </a>
-
-        <!-- Block of 3 link elements -->
-        <nav>
-            <a href="https://www.example1.com">Link 1</a>
-            <a href="https://www.example2.com">Link 2</a>
-            <a href="https://www.example3.com">Link 3</a>
-        </nav>
-
-        <!-- Section element inside the header -->
-        <section>
-            <!-- First block inside the section -->
-            <div>
-                <h1>Main Heading</h1>
-                <p>This is a text element inside the first block.</p>
-                <button>Click Me</button>
-            </div>
-
-            <!-- Second block inside the section -->
-            <div>
-                <h2>Subheading</h2>
-                <div>
-                    <!-- Four blocks each containing an image, heading, and text -->
-                    <div>
-                        <img src="https://via.placeholder.com/100" alt="Image 1">
-                        <h3>Heading 1</h3>
-                        <p>Text for the first image block.</p>
-                    </div>
-                    <div>
-                        <img src="https://via.placeholder.com/100" alt="Image 2">
-                        <h3>Heading 2</h3>
-                        <p>Text for the second image block.</p>
-                    </div>
-                    <div>
-                        <img src="https://via.placeholder.com/100" alt="Image 3">
-                        <h3>Heading 3</h3>
-                        <p>Text for the third image block.</p>
-                    </div>
-                    <div>
-                        <img src="https://via.placeholder.com/100" alt="Image 4">
-                        <h3>Heading 4</h3>
-                        <p>Text for the fourth image block.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-
-    <!-- Main element below the header -->
+    <!-- Main content -->
     <main>
-        <!-- Main content goes here -->
+        <!-- Heading level 1 -->
+        <h1>Main Heading</h1>
+
+        <!-- First row block -->
+        <div class="row">
+            <!-- First item block in the first row -->
+            <div class="item">
+                <h2>Item Heading 1</h2>
+                <p>This is some text for the first item block in the first row.</p>
+            </div>
+            <!-- Second item block in the first row -->
+            <div class="item">
+                <h2>Item Heading 2</h2>
+                <p>This is some text for the second item block in the first row.</p>
+            </div>
+        </div>
+
+        <!-- Second row block -->
+        <div class="row">
+            <!-- First item block in the second row -->
+            <div class="item">
+                <h2>Item Heading 3</h2>
+                <p>This is some text for the first item block in the second row.</p>
+            </div>
+            <!-- Second item block in the second row -->
+            <div class="item">
+                <h2>Item Heading 4</h2>
+                <p>This is some text for the second item block in the second row.</p>
+            </div>
+        </div>
     </main>
+
+    <!-- Footer element -->
+    <footer>
+        <!-- Centering block for footer content -->
+        <div class="footer-container">
+            <!-- Inner block for footer content -->
+            <div class="footer-content">
+                <!-- Image in the footer -->
+                <img src="https://via.placeholder.com/100" alt="Footer Image">
+
+                <!-- Block containing 3 images with links -->
+                <div class="footer-images">
+                    <a href="https://www.example1.com">
+                        <img src="https://via.placeholder.com/50" alt="Link Image 1">
+                    </a>
+                    <a href="https://www.example2.com">
+                        <img src="https://via.placeholder.com/50" alt="Link Image 2">
+                    </a>
+                    <a href="https://www.example3.com">
+                        <img src="https://via.placeholder.com/50" alt="Link Image 3">
+                    </a>
+                </div>
+
+                <!-- Text below the images -->
+                <p>Footer text providing additional information or copyright notice.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
